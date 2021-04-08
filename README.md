@@ -24,6 +24,7 @@
 - 下載 demo，安裝 package
 - [註冊 app center 帳號](https://docs.microsoft.com/en-us/appcenter/distribution/codepush/cli#account-management)
 - 給我 email，我會再加入專案 MyApp-Android 的協作成員裡 Collaborators
+  - 或者是自己創新的專案，但要記得更改 `build.gradle` 的 deployment keys
 - 設置 current project
   - 之後就不用每次都要下 `-a <ownerName>/MyApp-Android ` 
   - `appcenter apps set-current <ownerName>/MyApp-Android`
