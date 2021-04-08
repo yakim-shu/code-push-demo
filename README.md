@@ -19,9 +19,14 @@
 
 ---
 
-### 環境設置
-
+### Usage
 - 下載 demo，安裝 package
+
+```shell
+git clone git@github.com:yakim-shu/code-push-demo.git
+yarn
+```
+
 - [註冊 app center 帳號](https://docs.microsoft.com/en-us/appcenter/distribution/codepush/cli#account-management)
 - 給我 email，我會再加入專案 MyApp-Android 的協作成員裡 Collaborators
   - 或者是自己創新的專案，但要記得更改 `build.gradle` 的 deployment keys
