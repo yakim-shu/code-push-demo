@@ -1,0 +1,40 @@
+{
+  "name": "codepush",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "react-native run-android",
+    "ios": "react-native run-ios",
+    "start": "react-native start",
+    "test": "jest",
+    "lint": "eslint .",
+    "gradle:clean": "cd android && ./gradlew clean",
+    "android:releaseStaging": "yarn gradle:clean && cd android && ./gradlew app:assembleReleaseStaging",
+    "android:installStaging": "yarn gradle:clean && cd android && ./gradlew app:installReleaseStaging",
+    "android:releaseProduction": "yarn gradle:clean && cd android && ./gradlew app:assembleRelease",
+    "android:installProduction": "yarn gradle:clean && cd android && ./gradlew app:installRelease"
+  },
+  "dependencies": {
+    "appcenter": "4.0.2",
+    "appcenter-analytics": "4.0.2",
+    "appcenter-crashes": "4.0.2",
+    "react": "17.0.1",
+    "react-native": "0.64.0",
+    "react-native-code-push": "^7.0.0",
+    "react-native-fast-image": "^8.3.4",
+    "styled-components": "^5.2.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.13.10",
+    "@babel/runtime": "^7.13.10",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-jest": "^26.6.3",
+    "eslint": "^7.22.0",
+    "jest": "^26.6.3",
+    "metro-react-native-babel-preset": "^0.65.2",
+    "react-test-renderer": "17.0.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
